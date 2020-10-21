@@ -11,16 +11,10 @@ const menuCardsList = menuCards.reduce((acc, menuCards) => {
     return acc + cardTemplate(menuCards)
 }, '')
 
+const mainMenuEl = document.querySelector('.js-menu');
+mainMenuEl.insertAdjacentHTML("beforeend", menuCardsList);
 
 
 
-// const menuCardList = [
-//     {
-//     id: "id",
-//     name: "name",
-//     description: "description",
-//     image: '',
-//     price: "price",
-//     ingredients: []
-// }]
+
 console.log(menuCardsList);
