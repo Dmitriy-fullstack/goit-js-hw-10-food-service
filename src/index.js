@@ -32,3 +32,12 @@ function onInputClick (evt) {
         localStorage.setItem('Theme', Theme.LIGHT);
       }
 }
+
+if (localStorage.getItem('Theme', Theme.DARK)) {
+    bodyEl.classList.add(Theme.DARK);
+    bodyEl.classList.remove(Theme.LIGHT);
+    inputEl.checked = true;
+} else {
+    bodyEl.classList.add(Theme.LIGHT);
+    bodyEl.classList.remove(Theme.DARK);
+}
