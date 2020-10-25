@@ -33,7 +33,7 @@ function onInputClick (evt) {
       }
 }
 
-if (localStorage.getItem('Theme', Theme.DARK)) {
+if (localStorage['Theme'] === 'dark-theme') {
     bodyEl.classList.add(Theme.DARK);
     bodyEl.classList.remove(Theme.LIGHT);
     inputEl.checked = true;
